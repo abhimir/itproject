@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'rails',     :git => 'git://github.com/rails/rails.git'
-gem 'arel',      :git => 'git://github.com/rails/arel.git'
 gem 'rack',      :git => 'git://github.com/rack/rack.git'
 gem 'sprockets', :git => 'git://github.com/sstephenson/sprockets.git'
 
@@ -33,4 +32,5 @@ group :development do
   gem 'wirble'
   gem 'sketches'
   gem 'mongrel', '1.2.0.pre2'
+  gem 'simplecov'
 end
