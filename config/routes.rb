@@ -1,4 +1,7 @@
 Itproject::Application.routes.draw do
+
+  resources :tumblr 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
