@@ -1,8 +1,11 @@
-# Model to scrapes Tumblr search
+# Model to scrape Tumblr search
 
 class Tumblr
-
   attr_accessor :query
+
+  extend Wrapper
+
+  self.wrap_with_api_hit(:scrape_search)
 
   def initialize(attributes)
     @query = attributes.delete(:query)
@@ -13,8 +16,4 @@ class Tumblr
 
   def scrape_search
   end
-  
-  # TEMP: Will be eventually defined by Wrapper module
-  def scrape_search_wrapper
- end
 end
