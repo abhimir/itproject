@@ -8,7 +8,7 @@ module Wrapper
 
         send(method) 
 
-        api_hit.save
+        #api_hit.save
 
         true
       end
