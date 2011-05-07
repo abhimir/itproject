@@ -29,6 +29,7 @@ Spork.each_run do
   require 'simplecov'
   SimpleCov.start 'rails' do
     add_filter "vendor"
+    add_group "Modules", "app/modules"
   end
 
   # This code will be run each time you run your specs.
