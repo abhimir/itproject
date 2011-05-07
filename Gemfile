@@ -32,5 +32,5 @@ group :development do
   gem 'wirble'
   gem 'sketches'
   gem 'mongrel', '1.2.0.pre2'
-  gem 'simplecov'
+  gem 'simplecov', '>= 0.4.0', :require => false
 end

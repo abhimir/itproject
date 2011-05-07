@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe Tumblr do
 
   let(:tumblr) do

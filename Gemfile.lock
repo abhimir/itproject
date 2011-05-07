@@ -189,7 +189,7 @@ DEPENDENCIES
   rails!
   rspec-rails
   sass
-  simplecov
+  simplecov (>= 0.4.0)
   sketches
   spork (= 0.9.0.rc3)
   sprockets!

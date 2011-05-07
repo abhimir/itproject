@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe ApiHit do
 
   let(:api_hit) do

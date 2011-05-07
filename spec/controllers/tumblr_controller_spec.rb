@@ -5,7 +5,7 @@ describe TumblrController do
 context '#create' do
 
   before(:each) do
-    @tumblr = Tumblr.new
+    @tumblr = Tumblr.new(:query => "Bob Dylan")
   end
 
   it 'new instance for each query' do
@@ -23,6 +23,7 @@ context '#create' do
   it 'scrape Tumblr after create' do
     Tumblr.stub!(:new).and_return(@tumblr)
     @tumblr.should_receive(:scrape_search_wrapper)
+
     post :create, {:tumblr => {:query => "Bob Dylan"}}
   end
 end

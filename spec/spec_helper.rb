@@ -26,9 +26,11 @@ Spork.prefork do
 end
 
 Spork.each_run do
+  require 'simplecov'
+  SimpleCov.start 'rails' do
+    add_filter "vendor"
+  end
+
   # This code will be run each time you run your specs.
   Dir[File.expand_path(File.dirname(__FILE__) + "/../app/*/*.rb")].each {|file| load file }
-  
-  require 'simplecov'
-  SimpleCov.start "rails"
 end
