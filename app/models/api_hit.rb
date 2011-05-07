@@ -1,3 +1,5 @@
+# Model to track, time various api requests 
+
 class ApiHit
 
   attr_accessor :service, :start_time, :end_time

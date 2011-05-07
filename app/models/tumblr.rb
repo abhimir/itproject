@@ -1,4 +1,4 @@
-# Model that scrapes Tumblr search
+# Model to scrapes Tumblr search
 
 class Tumblr
 
