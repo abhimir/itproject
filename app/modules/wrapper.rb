@@ -4,7 +4,12 @@ module Wrapper
   def wrap_with_api_hit(*methods)
     methods.each do |method|
       define_method("#{method}_wrapper") do
-        puts query
+        api_hit = ApiHit.new(:service => self.class.to_s)
+
+        send(method) 
+
+        api_hit.save
+
         true
       end
     end
